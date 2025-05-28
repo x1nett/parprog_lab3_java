@@ -14,7 +14,7 @@ public class Consumer implements Runnable {
         try {
             for (int i = 0; i < itemCount; i++) {
                 storage.consume(id);
-                Thread.sleep(500); // для наочності
+                Thread.sleep(500); 
             }
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
